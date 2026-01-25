@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="375.0" prefWidth="645.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gl.guserfx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="239.0" prefWidth="605.0" style="-fx-background-color: black;">
+      <children>
+         <Button layoutX="249.0" layoutY="199.0" mnemonicParsing="false" onAction="#addUser" style="-fx-background-color: green;" text="Enregistrer" textFill="#fbfffd" />
+         <TextField fx:id="nomT" layoutX="193.0" layoutY="14.0" />
+         <TextField fx:id="emailT" layoutX="193.0" layoutY="63.0" />
+         <TextField fx:id="passT" layoutX="193.0" layoutY="113.0" />
+         <Label layoutX="129.0" layoutY="11.0" text="Nom" textFill="#e4dddd">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="129.0" layoutY="61.0" text="Email" textFill="#e4dddd">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="129.0" layoutY="111.0" text="Pass" textFill="#e4dddd">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Button layoutX="500.0" layoutY="37.0" mnemonicParsing="false" onAction="#toListeUser" text="voir liste" />
+      </children>
+   </Pane>
+
+    <Label fx:id="welcomeText" />
+</VBox>
